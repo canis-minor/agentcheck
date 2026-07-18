@@ -1,0 +1,8 @@
+scenarios:
+  - name: password-reset
+    input: Help me reset my password.
+    expect:
+      task_success: true
+    budgets:
+      max_cost_usd: 0.05
+      max_latency_ms: 5000
