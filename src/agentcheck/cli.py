@@ -7,7 +7,7 @@ import yaml
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(prog="agent-tester")
+    parser = argparse.ArgumentParser(prog="agentcheck")
     subparsers = parser.add_subparsers(dest="command", required=True)
     run_parser = subparsers.add_parser("run")
     run_parser.add_argument("suite", type=Path)

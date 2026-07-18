@@ -1,8 +1,17 @@
-# Agent Tester
+# AgentCheck
 
-Regression testing and continuous evaluation for AI agents.
+**Regression testing, evaluation, and quality gates for AI agents.**
 
-Agent Tester treats prompts, tools, policies, models, and memory changes as
+![status: experimental](https://img.shields.io/badge/status-experimental-orange)
+
+> Part of the **[Reliable Agent Stack](https://github.com/canis-minor/reliable-agent-stack)** —
+> [TypedMem](https://github.com/canis-minor/typedmem) ·
+> **AgentCheck** ·
+> [AgentTrace](https://github.com/canis-minor/agenttrace) ·
+> [ReliAgent Bench](https://github.com/canis-minor/reliagent-bench) ·
+> [AgentLab](https://github.com/canis-minor/agentlab)
+
+AgentCheck treats prompts, tools, policies, models, and memory changes as
 versioned software changes. It runs repeatable scenarios and compares quality,
 cost, latency, and reliability before a change reaches production.
 
@@ -20,7 +29,7 @@ evaluators
 quality gate
 ```
 
-## Core capabilities
+## Planned capabilities
 
 - Declarative test scenarios
 - Deterministic and model-based evaluators
@@ -28,8 +37,9 @@ quality gate
 - Cost and latency budgets
 - Flakiness tracking
 - CI-friendly pass/fail reports
+- Safety / policy checks
 
-## Example
+## Example scenario
 
 ```yaml
 name: password-reset
@@ -46,7 +56,7 @@ budgets:
 
 ```bash
 pip install -e .
-agent-tester run examples/suite.yaml
+agentcheck run examples/suite.yaml
 ```
 
 ## Research questions
@@ -58,4 +68,8 @@ agent-tester run examples/suite.yaml
 
 ## Status
 
-CLI and evaluation contract scaffold.
+**Experimental.** CLI and evaluation-contract scaffold only — the runner loads a
+scenario file and reports counts. Evaluators, budgets, and comparison are not yet
+implemented. Designed to consume traces from
+[AgentTrace](https://github.com/canis-minor/agenttrace) and run task sets from
+[ReliAgent Bench](https://github.com/canis-minor/reliagent-bench).

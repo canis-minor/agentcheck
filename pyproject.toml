@@ -1,12 +1,18 @@
 [project]
-name = "agent-tester"
+name = "agentcheck"
 version = "0.1.0"
-description = "Continuous evaluation and regression testing for AI agents"
+description = "AgentCheck — regression testing, evaluation, and quality gates for AI agents"
 requires-python = ">=3.11"
+authors = [{ name = "Ruxi", email = "ruxiz2018@gmail.com" }]
+license = "Apache-2.0"
 dependencies = ["pyyaml>=6.0"]
 
+[project.urls]
+Homepage = "https://github.com/canis-minor/agentcheck"
+Portfolio = "https://github.com/canis-minor/reliable-agent-stack"
+
 [project.scripts]
-agent-tester = "agent_tester.cli:main"
+agentcheck = "agentcheck.cli:main"
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0", "ruff>=0.5"]

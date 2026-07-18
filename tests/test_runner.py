@@ -1,5 +1,5 @@
-from agent_tester.models import Scenario
-from agent_tester.runner import run_scenario
+from agentcheck.models import Scenario
+from agentcheck.runner import run_scenario
 
 
 def test_passing_scenario() -> None:
