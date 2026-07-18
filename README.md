@@ -4,7 +4,7 @@
 
 **Regression testing, evaluation, and quality gates for AI agents.**
 
-![status: experimental](https://img.shields.io/badge/status-experimental-orange)
+![status: research prototype](https://img.shields.io/badge/status-research%20prototype-orange)
 
 > Siblings in the RLRA stack —
 > [TypedMem](https://github.com/canis-minor/typedmem) ·
@@ -70,7 +70,7 @@ agentcheck run examples/suite.yaml
 
 ## Status
 
-**Experimental.** CLI and evaluation-contract scaffold only — the runner loads a
+**Research prototype.** CLI and evaluation-contract scaffold only — the runner loads a
 scenario file and reports counts. Evaluators, budgets, and comparison are not yet
 implemented. Designed to consume traces from
 [AgentTrace](https://github.com/canis-minor/agenttrace) and run task sets from
