@@ -1,10 +1,12 @@
+> This repository is part of the **[Reliable Long-Running Agents (RLRA)](https://github.com/canis-minor)** research initiative.
+
 # AgentCheck
 
 **Regression testing, evaluation, and quality gates for AI agents.**
 
 ![status: experimental](https://img.shields.io/badge/status-experimental-orange)
 
-> Part of the **[Reliable Agent Stack](https://github.com/canis-minor/reliable-agent-stack)** —
+> Siblings in the RLRA stack —
 > [TypedMem](https://github.com/canis-minor/typedmem) ·
 > **AgentCheck** ·
 > [AgentTrace](https://github.com/canis-minor/agenttrace) ·
